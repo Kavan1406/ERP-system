@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity4">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:layout_alignStart="@+id/cname"
+        android:layout_alignTop="@+id/cid"
+        android:text="Customer ID :"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/cid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/cname"
+        android:layout_width="180dp"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="116dp"
+        android:text="Customer Name :"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/ecid"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cname"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/gst"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cname"
+        android:layout_marginTop="203dp"
+        android:text="GST No :"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/egst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gst"
+        android:layout_toEndOf="@+id/gst"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="215dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="207dp"
+        android:text="Scan Barcode" />
+
+    <Button
+        android:id="@+id/invoice"
+        android:layout_width="214dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"
+        android:text="Generate Invoice" />
+</RelativeLayout>
